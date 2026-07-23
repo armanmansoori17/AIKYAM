@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "amego-e1540"
+  },
+  "targets": {
+    "amego-e1540": {
+      "hosting": {
+        "aikyam-2k26": [
+          "aikyam-2k26"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

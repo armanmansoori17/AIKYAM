@@ -1,0 +1,333 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/chunks/2-3i7pwa_xcdr.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/01dkdyukbdpqq.js"/><script src="/_next/static/chunks/27jktro2p5rq9.js" async=""></script><script src="/_next/static/chunks/082obv3v03b-9.js" async=""></script><script src="/_next/static/chunks/3rxl-jt3pdxgx.js" async=""></script><script src="/_next/static/chunks/turbopack-2jiwj-bdcv9ta.js" async=""></script><script src="/_next/static/chunks/05-c3ty_6dwfk.js" async=""></script><script src="/_next/static/chunks/14mrh2-p_w84d.js" async=""></script><script src="/_next/static/chunks/2iad1u3ur1cm9.js" async=""></script><link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;family=Playfair+Display:ital,wght@0,700;0,900;1,400&amp;display=swap" as="style"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><title>AIKYAM 2K26 | Acharya Institute of Graduate Studies</title><meta name="description" content="AIKYAM 2K26 — The Grand Tech &amp; Cultural Fest of Acharya Institute of Graduate Studies, NAAC Re-Accredited &#x27;A+&#x27;, Soladevanahalli, Bengaluru."/><meta name="keywords" content="AIKYAM,AIGS,tech fest,Acharya Institute,college event,Bengaluru"/><link rel="icon" href="/favicon.ico?favicon.2vob68tjqpejf.ico" sizes="256x256" type="image/x-icon"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;family=Playfair+Display:ital,wght@0,700;0,900;1,400&amp;display=swap" rel="stylesheet"/><script src="/_next/static/chunks/0cz1d0mv5g_q7.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rajdhani:wght@500;600;700&display=swap');
+
+        :root {
+          --ff-neon: #FF4500;
+          --ff-gold: #FFD700;
+          --ff-bg: #050505;
+          --ff-hud: rgba(20, 5, 0, 0.85);
+        }
+
+        .ff-menu-world {
+          background-color: var(--ff-bg);
+          color: #fff;
+          font-family: 'Rajdhani', sans-serif;
+          height: 100vh;
+          width: 100vw;
+          overflow: hidden;
+          position: fixed;
+          inset: 0;
+          display: flex;
+          z-index: 999;
+        }
+
+        /* Loading Screen */
+        .ff-loader {
+          position: fixed;
+          inset: 0;
+          background: #000;
+          z-index: 99999;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          transition: opacity 0.6s ease;
+        }
+        .ff-loader.hidden {
+          opacity: 0;
+          pointer-events: none;
+        }
+        .skull-icon {
+          font-size: 5rem;
+          animation: dropIn 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards, float 2s ease-in-out infinite alternate 0.5s;
+        }
+        .loader-text {
+          font-family: 'Black Ops One', cursive;
+          font-size: 3rem;
+          color: var(--ff-neon);
+          margin-top: 20px;
+          letter-spacing: 5px;
+          text-shadow: 0 0 20px var(--ff-neon);
+        }
+
+        @keyframes dropIn {
+          0% { transform: translateY(-200px) scale(2); opacity: 0; }
+          100% { transform: translateY(0) scale(1); opacity: 1; }
+        }
+        @keyframes float {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-15px); }
+        }
+
+        /* Background & Embers */
+        .ff-bg-layer {
+          position: absolute;
+          inset: 0;
+          background-image: url('/freefire-bg.webp');
+          background-size: cover;
+          background-position: center;
+          filter: contrast(1.2) brightness(0.4) saturate(1.5);
+          z-index: 0;
+        }
+        .ember-container {
+          position: absolute;
+          inset: 0;
+          z-index: 1;
+          pointer-events: none;
+          overflow: hidden;
+        }
+        .ember {
+          position: absolute;
+          bottom: -20px;
+          background: var(--ff-neon);
+          border-radius: 50%;
+          filter: blur(2px);
+          animation: flyUp 5s linear infinite;
+          opacity: 0;
+        }
+        @keyframes flyUp {
+          0% { transform: translateY(0) scale(1); opacity: 1; }
+          100% { transform: translateY(-100vh) scale(0.2); opacity: 0; }
+        }
+
+        /* Sidebar Navigation */
+        .ff-sidebar {
+          position: relative;
+          z-index: 10;
+          width: 400px;
+          background: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.5) 100%);
+          border-right: 2px solid rgba(255, 69, 0, 0.4);
+          display: flex;
+          flex-direction: column;
+          padding: 60px 0;
+          box-shadow: 10px 0 40px rgba(0,0,0,0.9);
+        }
+        .sidebar-header {
+          padding: 0 50px;
+          margin-bottom: 80px;
+        }
+        .game-title {
+          font-family: 'Black Ops One', cursive;
+          font-size: 3.5rem;
+          line-height: 1;
+          color: #fff;
+          text-shadow: 3px 3px 0 var(--ff-neon);
+          margin: 0;
+        }
+        .game-subtitle {
+          font-size: 1.4rem;
+          color: var(--ff-gold);
+          letter-spacing: 5px;
+          text-transform: uppercase;
+          font-weight: 700;
+          margin-top: 10px;
+        }
+
+        .menu-list {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+        }
+        .menu-item {
+          padding: 20px 50px;
+          font-family: 'Black Ops One', cursive;
+          font-size: 1.6rem;
+          color: rgba(255,255,255,0.3);
+          cursor: pointer;
+          transition: all 0.3s;
+          position: relative;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          border-left: 6px solid transparent;
+        }
+        .menu-item:hover {
+          color: #fff;
+          background: rgba(255, 69, 0, 0.15);
+        }
+        .menu-item.active {
+          color: var(--ff-gold);
+          background: linear-gradient(90deg, rgba(255, 69, 0, 0.4) 0%, transparent 100%);
+          border-left: 6px solid var(--ff-neon);
+          text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+        }
+
+        .home-btn {
+          margin-top: auto;
+          margin-left: 50px;
+          margin-right: 50px;
+          padding: 15px;
+          background: transparent;
+          border: 2px solid var(--ff-neon);
+          color: var(--ff-neon);
+          font-family: 'Black Ops One', cursive;
+          font-size: 1.2rem;
+          text-align: center;
+          text-decoration: none;
+          transition: all 0.3s;
+        }
+        .home-btn:hover {
+          background: var(--ff-neon);
+          color: #fff;
+          box-shadow: 0 0 20px var(--ff-neon);
+        }
+
+        /* Main Content Area */
+        .ff-main {
+          position: relative;
+          z-index: 10;
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 50px;
+        }
+
+        .hud-window {
+          width: 100%;
+          max-width: 900px;
+          height: 650px;
+          background: var(--ff-hud);
+          border: 2px solid var(--ff-neon);
+          box-shadow: 0 0 40px rgba(255, 69, 0, 0.3), inset 0 0 80px rgba(0,0,0,0.9);
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          animation: glitchIn 0.2s ease-out;
+        }
+        @keyframes glitchIn {
+          0% { clip-path: inset(100% 0 0 0); opacity: 0; }
+          50% { clip-path: inset(0 0 50% 0); opacity: 0.5; }
+          100% { clip-path: inset(0 0 0 0); opacity: 1; }
+        }
+
+        .hud-header {
+          padding: 25px 40px;
+          border-bottom: 2px solid rgba(255, 69, 0, 0.6);
+          background: rgba(0,0,0,0.6);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .hud-title {
+          font-family: 'Black Ops One', cursive;
+          font-size: 2.8rem;
+          color: #fff;
+          margin: 0;
+          letter-spacing: 4px;
+        }
+        .hud-decorator {
+          display: flex;
+          gap: 8px;
+        }
+        .hud-decorator span {
+          width: 18px; height: 18px;
+          background: var(--ff-neon);
+          transform: rotate(45deg);
+        }
+
+        .hud-body {
+          padding: 50px;
+          flex: 1;
+          overflow-y: auto;
+        }
+        .hud-body::-webkit-scrollbar { width: 10px; }
+        .hud-body::-webkit-scrollbar-track { background: rgba(0,0,0,0.6); }
+        .hud-body::-webkit-scrollbar-thumb { background: var(--ff-neon); }
+
+        .mission-text {
+          font-size: 1.5rem;
+          color: #ddd;
+          line-height: 1.7;
+          border-left: 5px solid var(--ff-gold);
+          padding-left: 25px;
+        }
+        
+        .stat-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 40px;
+          margin-top: 50px;
+        }
+        .stat-box {
+          background: rgba(255,255,255,0.05);
+          border: 1px solid rgba(255,255,255,0.1);
+          padding: 25px;
+        }
+        .stat-label {
+          font-size: 1.2rem;
+          color: var(--ff-neon);
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-weight: 700;
+        }
+        .stat-value {
+          font-size: 3rem;
+          font-family: 'Black Ops One', cursive;
+          color: #fff;
+          margin-top: 15px;
+        }
+
+        .loot-item {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          background: rgba(255, 215, 0, 0.1);
+          border: 1px solid var(--ff-gold);
+          padding: 30px;
+          margin-bottom: 30px;
+        }
+        .loot-icon {
+          font-size: 4rem;
+        }
+        .loot-details {
+          flex: 1;
+        }
+        
+        .rules-list {
+          list-style: none;
+          padding: 0; margin: 0;
+        }
+        .rules-list li {
+          font-size: 1.3rem;
+          color: #eee;
+          margin-bottom: 25px;
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+          background: rgba(255,255,255,0.03);
+          padding: 20px;
+          border-left: 3px solid var(--ff-neon);
+        }
+        .rules-list li::before {
+          content: '⚠';
+          color: var(--ff-neon);
+        }
+
+        .register-bar {
+          padding: 25px;
+          background: rgba(0,0,0,0.85);
+          border-top: 2px solid rgba(255, 69, 0, 0.6);
+          display: flex;
+          justify-content: flex-end;
+        }
+        .register-btn {
+          background: var(--ff-neon);
+          color: #fff;
+          font-family: 'Black Ops One', cursive;
+          font-size: 1.6rem;
+          padding: 15px 50px;
+          border: none;
+          cursor: pointer;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          transition: all 0.3s;
+        }
+        .register-btn:hover {
+          background: #fff;
+          color: var(--ff-neon);
+          box-shadow: 0 0 25px #fff;
+        }
+      </style><div class="ff-loader "><div class="skull-icon">💀</div><div class="loader-text">BOOYAH!</div></div><div class="ff-menu-world"><div class="ff-bg-layer"></div><div class="ember-container"><div class="ember" style="left:28.349218042309932%;width:9.12544470197928px;height:7.638007257069907px;animation-delay:4.186530425656219s;animation-duration:3.4398810231658863s"></div><div class="ember" style="left:17.872594657488083%;width:9.220847096160263px;height:6.31209994545648px;animation-delay:0.4253683871741365s;animation-duration:3.638361135272497s"></div><div class="ember" style="left:43.46419956294197%;width:4.433923164335911px;height:7.21421124222892px;animation-delay:0.6256243847028725s;animation-duration:6.913894349123986s"></div><div class="ember" style="left:37.11201573983631%;width:8.274346402782896px;height:10.641910565263679px;animation-delay:4.770992789522642s;animation-duration:4.155650752094449s"></div><div class="ember" style="left:70.73725502240585%;width:10.963681229251327px;height:8.931151352997183px;animation-delay:4.924470035472453s;animation-duration:6.558216397301724s"></div><div class="ember" style="left:0.9822739798238111%;width:10.019315725718336px;height:5.872005201796383px;animation-delay:1.0702827892009648s;animation-duration:4.205574572108466s"></div><div class="ember" style="left:97.58439670342777%;width:10.328197831172117px;height:9.479213580573717px;animation-delay:0.3682692140844668s;animation-duration:4.113491346683592s"></div><div class="ember" style="left:61.29033311710407%;width:7.757093681462483px;height:4.2863542361440645px;animation-delay:0.4758236773990293s;animation-duration:3.514149221727552s"></div><div class="ember" style="left:26.076537113657004%;width:6.444970176021672px;height:6.13059071011117px;animation-delay:4.869355529948737s;animation-duration:5.067953156738661s"></div><div class="ember" style="left:30.908861114327447%;width:7.709832540940695px;height:10.07233737325295px;animation-delay:0.7703336039294628s;animation-duration:4.354218280958703s"></div><div class="ember" style="left:37.41430258897306%;width:10.812931013989683px;height:4.263791612188952px;animation-delay:1.8815682505829534s;animation-duration:6.588893260040242s"></div><div class="ember" style="left:29.17546999348659%;width:4.996337476676357px;height:3.422141525247122px;animation-delay:3.7412914958083823s;animation-duration:5.5507164321706135s"></div><div class="ember" style="left:16.449203653430644%;width:10.784819067451178px;height:6.734491961099051px;animation-delay:3.9729710062150203s;animation-duration:5.410653755473s"></div><div class="ember" style="left:25.429617826807384%;width:9.606886894359885px;height:5.99006061949748px;animation-delay:1.661565214956095s;animation-duration:3.83499205074904s"></div><div class="ember" style="left:8.729117653720031%;width:7.0519272182322235px;height:3.394788367026494px;animation-delay:2.0050060274956083s;animation-duration:3.7647349144919895s"></div><div class="ember" style="left:67.52704356472897%;width:7.045798411018908px;height:5.402602558193619px;animation-delay:1.7259172112303756s;animation-duration:5.808881594765436s"></div><div class="ember" style="left:5.483542641833806%;width:9.941607847533227px;height:8.705778504689299px;animation-delay:3.0154978921981126s;animation-duration:6.2174868008177295s"></div><div class="ember" style="left:57.907161288645405%;width:8.2813739211476px;height:7.659789711759657px;animation-delay:3.654335455575846s;animation-duration:4.288512938539882s"></div><div class="ember" style="left:14.063546686565187%;width:3.1419796459005456px;height:6.650271729633548px;animation-delay:4.899313772588677s;animation-duration:3.7717698802272808s"></div><div class="ember" style="left:69.13176156935016%;width:3.0232949298811267px;height:5.4887294765661725px;animation-delay:2.378876932936686s;animation-duration:3.515646978161572s"></div><div class="ember" style="left:90.07291488127672%;width:7.835578311862156px;height:6.522541092995648px;animation-delay:4.856147809544623s;animation-duration:4.391974361704106s"></div><div class="ember" style="left:78.96880412521739%;width:3.663241885717743px;height:6.581812551476278px;animation-delay:2.818005662260548s;animation-duration:4.004340474620697s"></div><div class="ember" style="left:58.61630765749921%;width:6.588768618626062px;height:5.84876799560975px;animation-delay:3.541409142051602s;animation-duration:4.8212073351474025s"></div><div class="ember" style="left:18.086134622684202%;width:10.349726386173465px;height:6.265247035780554px;animation-delay:1.533808591300247s;animation-duration:4.029856873808722s"></div><div class="ember" style="left:31.37258734760898%;width:8.437616108822212px;height:4.533405122368854px;animation-delay:3.722079474274023s;animation-duration:4.841708172792146s"></div><div class="ember" style="left:58.538095587461704%;width:5.376902267495564px;height:9.041778655755433px;animation-delay:3.873268098125571s;animation-duration:3.9901036608359477s"></div><div class="ember" style="left:37.06624097861736%;width:3.8790364176857537px;height:8.050378692776182px;animation-delay:4.6156408310331685s;animation-duration:5.009901906222186s"></div><div class="ember" style="left:90.34863168977584%;width:10.908893208911561px;height:8.877831124823985px;animation-delay:4.322476750941459s;animation-duration:3.7473308118993724s"></div><div class="ember" style="left:43.886846432363235%;width:3.3061478967749123px;height:6.472161376988384px;animation-delay:0.7365848203212783s;animation-duration:3.6115934504859744s"></div><div class="ember" style="left:50.783139494151975%;width:5.915818186176159px;height:3.1843937436605616px;animation-delay:3.407363274275141s;animation-duration:4.5039881688094905s"></div><div class="ember" style="left:99.32626711447135%;width:6.36540027600433px;height:9.772228528767297px;animation-delay:3.6212641243739374s;animation-duration:3.484469173236013s"></div><div class="ember" style="left:58.62696396593472%;width:3.330841554362178px;height:9.453521080329068px;animation-delay:4.932909739488874s;animation-duration:5.698403177092782s"></div><div class="ember" style="left:54.75727152362481%;width:10.936730255936443px;height:4.798931391049806px;animation-delay:1.787245049861645s;animation-duration:4.385932554739632s"></div><div class="ember" style="left:28.772679465088167%;width:10.772941506010266px;height:6.928696441058515px;animation-delay:2.4887406695065954s;animation-duration:4.61277933031891s"></div><div class="ember" style="left:90.70845769839543%;width:6.652847274747693px;height:10.99737776525425px;animation-delay:1.3997195955446196s;animation-duration:4.963330637485651s"></div><div class="ember" style="left:45.511773906735854%;width:9.545655102755072px;height:10.024053831377808px;animation-delay:4.286264727779498s;animation-duration:3.818661242411016s"></div><div class="ember" style="left:34.464379733795965%;width:4.06532412129251px;height:9.49122496539448px;animation-delay:4.482377192035862s;animation-duration:6.338147639088444s"></div><div class="ember" style="left:18.406440307012083%;width:10.052325349624347px;height:7.665770873426019px;animation-delay:4.0008716104180895s;animation-duration:5.591224663450383s"></div><div class="ember" style="left:92.86255262358422%;width:4.492881207398693px;height:6.344284902291198px;animation-delay:0.29105376958004414s;animation-duration:4.6817975309688595s"></div><div class="ember" style="left:8.027093940634789%;width:10.72845605157707px;height:3.4771746863600557px;animation-delay:2.7307656124530464s;animation-duration:3.380564981713986s"></div></div><aside class="ff-sidebar"><div class="sidebar-header"><h1 class="game-title">RANABHOOMI</h1><div class="game-subtitle">FREE FIRE MAX</div></div><ul class="menu-list"><li class="menu-item active">Mission Briefing</li><li class="menu-item ">The Loot (Prizes)</li><li class="menu-item ">Rules of Survival</li></ul><a class="home-btn" href="/events">◀ ABORT MISSION</a></aside><main class="ff-main"><div class="hud-window"><div class="hud-header"><h2 class="hud-title">MISSION BRIEFING</h2><div class="hud-decorator"><span></span><span></span><span></span></div></div><div class="hud-body"><p class="mission-text">The RANABHOOMI survival tournament in Free Fire MAX. Squad-based battle royale with multiple matches — points-based ranking decides the champions of the arena. Custom room hosted by organisers. Lag or disconnect does not guarantee a restart.</p><div class="stat-grid"><div class="stat-box"><div class="stat-label">Squad Format</div><div class="stat-value">4 Members (Squad)</div></div><div class="stat-box"><div class="stat-label">Duration</div><div class="stat-value">Half-day event</div></div></div></div><div class="register-bar"><button class="register-btn">ENTER ARENA</button></div></div></main></div><!--$--><!--/$--><script src="/_next/static/chunks/01dkdyukbdpqq.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[39756,[\"/_next/static/chunks/05-c3ty_6dwfk.js\",\"/_next/static/chunks/14mrh2-p_w84d.js\"],\"default\"]\n3:I[37457,[\"/_next/static/chunks/05-c3ty_6dwfk.js\",\"/_next/static/chunks/14mrh2-p_w84d.js\"],\"default\"]\n4:I[47257,[\"/_next/static/chunks/05-c3ty_6dwfk.js\",\"/_next/static/chunks/14mrh2-p_w84d.js\"],\"ClientPageRoot\"]\n5:I[38962,[\"/_next/static/chunks/05-c3ty_6dwfk.js\",\"/_next/static/chunks/14mrh2-p_w84d.js\",\"/_next/static/chunks/2iad1u3ur1cm9.js\"],\"default\"]\n8:I[97367,[\"/_next/static/chunks/05-c3ty_6dwfk.js\",\"/_next/static/chunks/14mrh2-p_w84d.js\"],\"OutletBoundary\"]\n9:\"$Sreact.suspense\"\nc:I[97367,[\"/_next/static/chunks/05-c3ty_6dwfk.js\",\"/_next/static/chunks/14mrh2-p_w84d.js\"],\"ViewportBoundary\"]\ne:I[97367,[\"/_next/static/chunks/05-c3ty_6dwfk.js\",\"/_next/static/chunks/14mrh2-p_w84d.js\"],\"MetadataBoundary\"]\n10:I[68027,[\"/_next/static/chunks/05-c3ty_6dwfk.js\",\"/_next/static/chunks/14mrh2-p_w84d.js\"],\"default\",1]\n:HL[\"/_next/static/chunks/2-3i7pwa_xcdr.css\",\"style\"]\n:HL[\"https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900\u0026family=Playfair+Display:ital,wght@0,700;0,900;1,400\u0026display=swap\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"c\":[\"\",\"events\",\"ranabhoomi\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"events\",{\"children\":[\"ranabhoomi\",{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",16],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/2-3i7pwa_xcdr.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/05-c3ty_6dwfk.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/14mrh2-p_w84d.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"suppressHydrationWarning\":true,\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.googleapis.com\"}],[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.gstatic.com\",\"crossOrigin\":\"anonymous\"}],[\"$\",\"link\",null,{\"href\":\"https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900\u0026family=Playfair+Display:ital,wght@0,700;0,900;1,400\u0026display=swap\",\"rel\":\"stylesheet\"}]]}],[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"$L4\",null,{\"Component\":\"$5\",\"serverProvidedParams\":{\"searchParams\":{},\"params\":{},\"promises\":[\"$@6\",\"$@7\"]}}],[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/2iad1u3ur1cm9.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"$L8\",null,{\"children\":[\"$\",\"$9\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@a\"}]}]]}],{},null,false,null]},null,false,\"$@b\"]},null,false,\"$@b\"]},null,false,null],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$Lc\",null,{\"children\":\"$Ld\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$Le\",null,{\"children\":[\"$\",\"$9\",null,{\"name\":\"Next.Metadata\",\"children\":\"$Lf\"}]}]}],null]}],false]],\"m\":\"$undefined\",\"G\":[\"$10\",[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/2-3i7pwa_xcdr.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]]],\"S\":true,\"h\":null,\"s\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\",\"b\":\"14MmJ3z0FgZ8BiuCtrHm5\"}\n"])</script><script>self.__next_f.push([1,"11:[]\nb:\"$W11\"\n6:{}\n7:\"$0:f:0:1:1:children:1:children:1:children:0:props:children:0:props:serverProvidedParams:params\"\n"])</script><script>self.__next_f.push([1,"d:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><script>self.__next_f.push([1,"12:I[27201,[\"/_next/static/chunks/05-c3ty_6dwfk.js\",\"/_next/static/chunks/14mrh2-p_w84d.js\"],\"IconMark\"]\na:null\nf:[[\"$\",\"title\",\"0\",{\"children\":\"AIKYAM 2K26 | Acharya Institute of Graduate Studies\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"AIKYAM 2K26 — The Grand Tech \u0026 Cultural Fest of Acharya Institute of Graduate Studies, NAAC Re-Accredited 'A+', Soladevanahalli, Bengaluru.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"keywords\",\"content\":\"AIKYAM,AIGS,tech fest,Acharya Institute,college event,Bengaluru\"}],[\"$\",\"link\",\"3\",{\"rel\":\"icon\",\"href\":\"/favicon.ico?favicon.2vob68tjqpejf.ico\",\"sizes\":\"256x256\",\"type\":\"image/x-icon\"}],[\"$\",\"$L12\",\"4\",{}]]\n"])</script></body></html>
